@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useEffect,useState} from 'react'
 import LoginForm from './LoginForm'
 import SignUp from './SignUp'
 import { Button } from './ui/button'
@@ -8,6 +8,9 @@ import WordPullUp from './magicui/word-pull-up'
 import BoxReveal from "@/components/magicui/box-reveal";
 
 const Login = () => {
+    useEffect(()=>{
+        document.title = "Login"
+    },[])
     return (
       <>
       <BoxReveal boxColor={"#5F4090"} duration={0.5}>

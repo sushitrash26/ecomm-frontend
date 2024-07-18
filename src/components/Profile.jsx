@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import { set, useForm } from 'react-hook-form'
 import { Button } from "@/components/ui/button"
@@ -20,6 +20,9 @@ import { cn } from '@/lib/utils'
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern"
 
 const Profile = () => {
+  useEffect(()=>{
+    document.title = "Profile"
+  },[])
     const userDetails = useSelector((state) => state.user.userInfo)
 
     const form = useForm()

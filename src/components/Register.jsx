@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useEffect,useState} from 'react'
 
 import SignUp from './SignUp'
 
@@ -9,7 +9,9 @@ import BoxReveal from "@/components/magicui/box-reveal";
 
 const Register = () => {
     
-  
+  useEffect(()=>{
+    document.title = "Register"
+  },[])
     return (
       <>
        <BoxReveal boxColor={"#5F4090"} duration={0.5}>

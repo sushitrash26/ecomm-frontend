@@ -40,6 +40,7 @@ const ProductDetails = () => {
    
 
     useEffect(()=>{
+      document.title = "Product Details"
         try {
             setIsLoading(true)
             const getProductById = async()=>{

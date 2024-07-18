@@ -35,6 +35,7 @@ const Order = () => {
   const [addressDetails,setAddressDetails] = useState({})
   const [isLoading,setIsLoading] = useState(false)
   useEffect(()=>{
+    document.title="Order"
     const getOrder = async()=>{
       const cartResponse = await axios.get("/api/v1/carts/latest")
        

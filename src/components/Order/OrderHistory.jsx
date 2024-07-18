@@ -6,6 +6,7 @@ const OrderHistory = () => {
     const [orders, setOrders] = useState([])
     const [loading, setLoading] = useState(false)
     useEffect(()=>{
+      document.title="Order History"
         const fetchOrders = async()=>{
             setLoading(true)
             const response = await axios.get('/api/v1/orders/get-orders')

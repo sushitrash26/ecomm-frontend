@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,6 +14,9 @@ import { cn } from '@/lib/utils.js';
 import AnimatedGridPattern from '@/components/magicui/animated-grid-pattern.jsx'
 
 const Dashboard = () => {
+  useEffect(()=>{
+    document.title = "Dashboard"
+  },[])
   return (
     <>
       <div className="w-[100vw] h-[5vh]  flex justify-start items-center">

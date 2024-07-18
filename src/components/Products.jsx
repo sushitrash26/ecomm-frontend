@@ -41,7 +41,7 @@ const Products = () => {
 
 
    useEffect(()=>{
-       
+       document.title = "All Products"
         const getProducts = async ()=>{
           setNoProducts(false)
            try {
